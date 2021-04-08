@@ -910,16 +910,21 @@ summary::after {
     display: flex;
     
 }
-.bottom_right_img{
-    border: 1px solid #f1f1f1;
-    width: 32px;
-    height: 32px;
+
+.img_fb{
+    padding: 3px;
+}
+
+.bottom_box:hover{
+    background-color: #f16d7f;
+}
+
+.bottom_box{
     margin-left: 8px;
     background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
 }
-
-.bottom_right_img:hover{
-    background-color: #f16d7f;
-    border: 1px solid #f16d7f;
-}
-
