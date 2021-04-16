@@ -660,7 +660,7 @@ summary::after {
         color: #f16d7f;
       }
     
-      .product_button_img{
+      .fa-long-arrow-alt-right{
           margin-bottom: 2px;
           margin-left: 9px;
       }
@@ -1246,6 +1246,9 @@ summary::after {
     color: #f16d7f;
 }
 
+.submit_add:hover .fa-shopping-cart{
+    color: #f16d7f;
+}
 .button_add_card{
     display: flex;
     align-items: center;
@@ -1254,11 +1257,10 @@ summary::after {
     font-weight: 700;
    
 }
-
-.img_submit_add{
-    padding-right: 15px;
+.fa-shopping-cart{
+    font-size: 22px;
+    margin-right: 15px;
 }
-
 /* ___________Y O U _ M A Y _ L I K E___________________________ */
 
 .you_may_like{
@@ -1328,3 +1330,10 @@ summary::after {
 .yml_example:hover .yml_rating{
     display: inline;
 }
+
+
+.fa-shopping-cart{
+    color: #ffffff;
+}
+
+<img class="img_submit_add" src="img/cart.png" alt="img">
