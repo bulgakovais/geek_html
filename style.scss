@@ -41,6 +41,7 @@ body {
 }
 /* ____________________LOGO____________________________- */
 
+
 .top_logo{
     display: flex;
     margin-right: 37px;
@@ -52,7 +53,7 @@ body {
     font-weight: 300;
     text-transform: uppercase;
     letter-spacing: 0.68px;
-   align-self: center;
+    align-self: center;
  } 
  
 .logo_d{
@@ -60,13 +61,18 @@ body {
     font-family: "Lato-Black"; 
     font-weight: 400;
     letter-spacing: 0.68px;
-    font-size: 27px;align-self: center;
+    font-size: 27px;
+    align-self: center;
  }
 
  .logo_img{
     margin-top: -5px;
     padding-right: 13px;
+    &:hover{
+        transform: rotate(45deg);
+    }
 }
+
 /* _____________________________________________________________________- */
 
 .top_service_left_search{
@@ -101,7 +107,7 @@ summary::-webkit-details-marker {
     display: none;
   }
   
-summary::after {
+.top_text::after {
     content: "";
     left: 69px; top: 16px;
     width: 0;
@@ -110,8 +116,19 @@ summary::after {
     border-width: 6px 4.5px 0 4.5px;
     border-color: #838383 transparent transparent transparent;
     position: absolute;
+    transition: 0.2s;
   }
 
+  .top_text:hover::after{
+    border-color: #f16d7f transparent transparent transparent;
+  }
+  details[open] .top_text{
+      color: #f16d7f;
+  }
+  details[open] .top_text::after{
+    border-width: 0 4.5px 6px 4.5px;
+    border-color:  transparent transparent #f16d7f transparent;
+}
  .text {
     font-family: Lato;
     font-size: 14px;
@@ -177,6 +194,9 @@ summary::after {
     color: #a4a4a4;
     font-size: 14px;
     font-weight: 400;
+    &:hover{
+        color: #f16d7f;
+    }
 }
 
 
@@ -232,6 +252,7 @@ summary::after {
     letter-spacing: 0.38px;
     border: 1px solid #f16d7f;
     position: relative;
+    transition-duration: 0.3s;
   }
 
 .top_button_right::before{
@@ -328,6 +349,7 @@ summary::after {
         padding: 20px 20px 12px;
         position: absolute;
         z-index: 2;
+        transition: 0.3s;
     }
 
     .mega_box::before{
@@ -410,7 +432,7 @@ summary::after {
 
   .main_fon{
      background-image: url(img/main_banner_backgr.png);
-     background-position: 73% 100%;
+     background-position: 0% 100%;
      background-repeat: no-repeat;
   }
 
@@ -418,7 +440,7 @@ summary::after {
       display: flex;
       justify-content: start;
       padding-top: 224px;
-      padding-bottom: 297px;
+      padding-bottom: 289px;
   }
 
   .main_banner_text{
@@ -432,6 +454,7 @@ summary::after {
     font-size: 40px;
     letter-spacing: 1px;
     padding-left: 12px;
+    border-left: 12px solid #f16d7f;
   }
 
   .main_banner_stick_img{
@@ -441,7 +464,10 @@ summary::after {
   .main_banner_text_sup{
     font-size: 60px;
     letter-spacing: 1.5px;
-    margin-bottom: -5px;
+    margin-top: -13px;
+}
+.main_banner_text_sub{
+    margin-bottom: -7px;
 }
 
 .colortext{
@@ -478,6 +504,10 @@ summary::after {
     margin-bottom: 20px;
     background-repeat: no-repeat;
     box-sizing: border-box;
+    transition: 0.3s;
+}
+.promotions_left_sup:hover{
+    transform: scale(1.1);
 }
 
 .promotions_left_sub{
@@ -486,6 +516,10 @@ summary::after {
     background-color: #dadad2;
     background-repeat: no-repeat;
     box-sizing: border-box;
+    transition: 0.3s;
+}
+.promotions_left_sub:hover{
+    transform: scale(1.1);
 }
 
 .promotions_right{
@@ -500,6 +534,10 @@ summary::after {
     margin-bottom: 20px;
     background-repeat: no-repeat;
     box-sizing: border-box;
+    transition: 0.3s;
+}
+.promotions_right_sup:hover{
+    transform: scale(1.1);
 }
 
 .promotions_right_sub{
@@ -507,6 +545,10 @@ summary::after {
     background-repeat: no-repeat;
     height: 542px;
     box-sizing: border-box;
+    transition: 0.3s;
+}
+.promotions_right_sub:hover{
+    transform: scale(1.1);
 }
 
 .promotions_text{
@@ -560,10 +602,10 @@ summary::after {
     letter-spacing: 0.35px;
 }
   .item{
-      width: 263px;
+    width: 263px;
     position: relative;
     margin-bottom: 40px;
-    
+    transition-duration: 0.3s;
   }
   .item:hover{
     box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
@@ -608,6 +650,7 @@ summary::after {
     }
     .item_pic{
         width: 100%;
+        transition-duration: 0.3s;
     }
 
     .pic8{
@@ -655,6 +698,7 @@ summary::after {
         line-height: 46px;
         margin-bottom: 113px;
         text-align: center;
+        transition-duration: 0.3s;
       }
     
       .product_button:hover{
@@ -804,6 +848,7 @@ summary::after {
 .review_slider{
     display: flex;
     justify-content: left;
+    
 }
 
 .review_slider_border{
@@ -811,6 +856,7 @@ summary::after {
     margin-right: 13px;
     padding-top: 41px;
     width: 38px;
+    transition: 0.2s;
 }
 
 .review_slider_border:hover{
@@ -861,11 +907,17 @@ summary::after {
 }
 
 .letter_button{
-    border:none;
+    border:1px transparent;
     width: 104px;
     height: 46px;
     border-radius: 0 20px 20px 0;
     background-color: #f16d7f;
+    transition: 0.3s;
+    &:hover{
+        background-color: #e1e1e1;
+        color: #f16d7f;
+        border:1px solid#f16d7f;
+    }
 }
 
 .form_text{
@@ -954,6 +1006,9 @@ summary::after {
  .footer_logo{
      display: flex;
  }
+ .footer_logo:hover .logo_img{
+    transform: rotate(45deg);
+ }
 
  
 .bottom{
@@ -994,6 +1049,7 @@ summary::after {
     justify-content: center;
     width: 32px;
     height: 32px;
+    transition-duration: 0.3s;
 }
 
 
@@ -1026,7 +1082,6 @@ summary::after {
 
 .breadcrumb{
     display: flex;
-
     list-style-type: none;
 }
 
@@ -1076,9 +1131,10 @@ summary::after {
     width: 47px;
     height: 47px;
     background-color: #cdcdcc;
+    transition: 0.3s;
 }
 .product_slider:hover{
-    border: #f16d7f;
+    background-color: #f16d7f;
 }
 
 .slider_left{
@@ -1259,6 +1315,7 @@ summary::after {
     justify-content: center;
     font-size: 16px;
     font-weight: 700;
+    transition: 0.3s;
    
 }
 .fa-shopping-cart{
@@ -1455,6 +1512,7 @@ color: #b1b1b1;
     color: inherit;
     background-color: transparent;
     cursor: pointer;
+    transition: 0.3s;
 }
 
 .shopping-button{
@@ -1468,6 +1526,7 @@ color: #b1b1b1;
     &__right{
         border: 1px solid #eaeaea;;
         padding: 18px 40px;
+        transition: 0.3s;
     }
 }
 
@@ -1486,7 +1545,7 @@ color: #b1b1b1;
             border: 1px solid #eaeaea;
             text-align: left;
             padding-left: 17px;
-            
+            transition: 0.3s;
         }
     }
 }
@@ -1515,6 +1574,7 @@ color: #b1b1b1;
     color: #ffffff;
     padding: 18px 42px;
     border: 1px solid;
+    transition: 0.3s;
 }
 .check__button:hover{
     color: #f16d7f;
@@ -1541,6 +1601,9 @@ color: #b1b1b1;
         flex-direction: column;
         width: 21%;
         padding-right: 4%;
+        &-item{
+            margin-bottom: 18px;
+        }
     }
     &__right{
         display: flex;
@@ -1739,11 +1802,11 @@ color: #b1b1b1;
         border-color: #6f6e6e transparent transparent transparent;
         position: absolute;
         top: 17px;
-        right: 5px;
+        left: 220px;
     }
     &__menu{
-        display: none;
-        padding: 20px 20px 40px;
+        display: flex;
+        padding: 20px 20px 0;
         z-index: 1;
         &-ul{
             width: 100%;
@@ -1759,10 +1822,14 @@ color: #b1b1b1;
 .accordion:hover{
     color: #f16d7f;
 }
-.accordion:hover .accordion__menu{
-    display: flex;
+.main__left-item[open] .accordion{
+    color: #f16d7f;
 }
-.accordion:hover::after{
+.main__left-item[open] .accordion::after{
     border-width: 0 4.5px 6px 4.5px;
     border-color:  transparent transparent #f16d7f transparent;
+}
+.accordion:hover::after{
+    border-width: 6px 4.5px 0 4.5px;
+    border-color:  #f16d7f transparent transparent transparent;
 }
