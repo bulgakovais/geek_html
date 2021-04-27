@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="style.css">
-    <title>Shopping_cart</title>
+    <title>Checkout</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
@@ -524,146 +525,408 @@
         </div>
     </div>
 
-    <div class="cart container">
-        <div class="cart__heading text_color-black text_uppercase text_size-13 text_weight-700 bd_bottom">
-            <div class="cart__heading-left">
-                <p>Product Details</p>
-            </div>
-            <div class="cart__heading-right">
-                <div class="cart__heading-right_text">unite Price</div>
-                <div class="cart__heading-right_text">Quantity</div>
-                <div class="cart__heading-right_text">shipping</div>
-                <div class="cart__heading-right_text">Subtotal</div>
-                <div class="cart__heading-right_text">ACTION</div>
-            </div>
+    <div class="check-menu container">
+        <ul class="check-menu__ul">
+            <li class="check-menu__li">
+                <details>
+                    <summary
+                        class="check-summary hover_color text_color-black text_size-16 text_weight-700 text_uppercase">
+                        01.
+                        &nbsp;Shipping
+                        Adress</summary>
+                    <div class="check-menu__item">
+                        <div class="check-menu__item-left">
+                            <p class="text_color-black text_size-13 text_weight-400 text_uppercase">
+                                Check as a guest or
+                                register</p>
+                            <p class="pad-small text-color-gray5 text_size-13 text_weight-400">Register with us
+                                for future
+                                convenience</p>
+                            <label
+                                class="pad-large check-menu__label text_color-black text_size-12 text_weight-400 text_uppercase"><input
+                                    class="check-menu-input" type="radio" name="reg">checkout as
+                                guest </label>
+                            <label
+                                class="pad-small check-menu__label text_color-black text_size-12 text_weight-400 text_uppercase"><input
+                                    class="check-menu-input" type="radio" name="reg" checked>register </label>
+                            <p class="pad-large text_color-black text_size-13 text_weight-400 text_uppercase">register
+                                and save time!</p>
+                            <p class="pad-small text-color-gray5 text_size-13 text_weight-400">Register with us for
+                                future convenience</p>
+                            <p class="pad-large text-color-gray5 text_size-13 text_weight-400"><img
+                                    class="check-menu-arr" src="img/double-arrow.png" alt="arr">Fast and easy checkout
+                            </p>
+                            <p class="pad-small text-color-gray5 text_size-13 text_weight-400"><img
+                                    class="check-menu-arr" src="img/double-arrow.png" alt="arr">Easy access to your
+                                order
+                                history and status</p>
+                            <button
+                                class="check-menu_button check-menu_button-mar-top hover_color_gray text_size-14 text_weight-700 text_uppercase text-color-gray2"
+                                type="submit">Continue</button>
+                        </div>
+                        <div class="check-menu__item-right">
+                            <p class="text_color-black text_size-13 text_weight-400 text_uppercase">
+                                Already registed?</p>
+                            <p class="pad-small pad-small text-color-gray5 text_size-13 text_weight-400">Please log in
+                                below</p>
+                            <label class="pad-large text_size-12 text_weight-400 text_uppercase" for="email">EMAIL
+                                ADDRESS <i class="fas fa-star-of-life"></i></label>
+                            <input class="input-email-pass" type="email" id="email" size="30">
 
-        </div>
-        <div class="cart__product text_size-13 bd_bottom">
-            <a class="link" href="single_page.html">
-                <div class="cart__product-left">
-                    <img class="hover_translate" src="img/cart_card.png" alt="photo">
-                    <div class="parameters">
-                        <p class="text_color-black text_uppercase hover_color parameters_margin_bottom">Mango People
-                            T-shirt</p>
-                        <p class="text_color-gray">Color: Red</p>
-                        <p class="text_color-gray">Size: Xll</p>
+                            <label class="pad-small text_size-12 text_weight-400 text_uppercase"
+                                for="password">password<i class="fas fa-star-of-life"></i></label>
+                            <input class="input-email-pass" type="password" id="password" size="30">
+
+                            <p class="pad-small text_size-13 text_weight-400 text-color-red"><i
+                                    class="fas fa-star-of-life"></i>
+                                Required Fileds</p>
+                            <div class="right-button">
+                                <button
+                                    class="check-menu_button hover_color_gray text_size-14 text_weight-700 text_uppercase text-color-gray2"
+                                    type="submit">Log in</button>
+                                <a class="link" href="#">
+                                    <p class=" hover_color text_size-14 text_weight-400 text_color-black">Forgot
+                                        Password ?</p>
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </a>
-            <div class="cart__product-right text_color-gray">
-                <p class="margin_left hover_color">$150</p>
-                <input class="param_number hover_color text_color-gray" type="text" placeholder="2">
-                <p class="hover_color">FREE</p>
-                <p class="hover_color">$300</p>
-                <button class="button_bd" type="reset"><i
-                        class="fas fa-minus-circle fa-minus-circle-margin hover_color"></i></button>
-            </div>
-        </div>
-        <div class="cart__product text_size-13 bd_bottom">
-            <a class="link" href="single_page.html">
-                <div class="cart__product-left">
-                    <img class="hover_translate" src="img/cart_card2.png" alt="photo">
-                    <div class="parameters">
-                        <p class="text_color-black text_uppercase hover_color parameters_margin_bottom">Mango People
-                            T-shirt</p>
-                        <p class="text_color-gray">Color: Red</p>
-                        <p class="text_color-gray">Size: Xll</p>
+                </details>
+            </li>
+            <li class="check-menu__li ">
+                <details>
+                    <summary
+                        class="check-summary hover_color text_color-black text_size-16 text_weight-700 text_uppercase">
+                        02.
+                        &nbsp;BILLING
+                        INFORMATION</summary>
+                    <div class="check-menu__item">
+                        <div class="check-menu__item-left">
+                            <p class="text_color-black text_size-13 text_weight-400 text_uppercase">
+                                Check as a guest or
+                                register</p>
+                            <p class="pad-small text-color-gray5 text_size-13 text_weight-400">Register with us
+                                for future
+                                convenience</p>
+                            <label
+                                class="pad-large check-menu__label text_color-black text_size-12 text_weight-400 text_uppercase"><input
+                                    class="check-menu-input" type="radio" name="reg">checkout as
+                                guest</label>
+                            <label
+                                class="pad-small check-menu__label text_color-black text_size-12 text_weight-400 text_uppercase"><input
+                                    class="check-menu-input" type="radio" name="reg" checked>register</label>
+                            <p class="pad-large text_color-black text_size-13 text_weight-400 text_uppercase">register
+                                and save time!</p>
+                            <p class="pad-small text-color-gray5 text_size-13 text_weight-400">Register with us for
+                                future convenience</p>
+                            <p class="pad-large text-color-gray5 text_size-13 text_weight-400"><img
+                                    class="check-menu-arr" src="img/double-arrow.png" alt="arr">Fast and easy checkout
+                            </p>
+                            <p class="pad-small text-color-gray5 text_size-13 text_weight-400"><img
+                                    class="check-menu-arr" src="img/double-arrow.png" alt="arr">Easy access to your
+                                order
+                                history and status</p>
+                            <button
+                                class="check-menu_button check-menu_button-mar-top hover_color_gray text_size-14 text_weight-700 text_uppercase text-color-gray2"
+                                type="submit">Continue</button>
+                        </div>
+                        <div class="check-menu__item-right">
+                            <p class="text_color-black text_size-13 text_weight-400 text_uppercase">
+                                Already registed?</p>
+                            <p class="pad-small pad-small text-color-gray5 text_size-13 text_weight-400">Please log in
+                                below</p>
+                            <label class="pad-large text_size-12 text_weight-400 text_uppercase" for="email">EMAIL
+                                ADDRESS <i class="fas fa-star-of-life"></i></label>
+                            <input class="input-email-pass" type="email" id="email" size="30">
+
+                            <label class="pad-small text_size-12 text_weight-400 text_uppercase"
+                                for="password">password<i class="fas fa-star-of-life"></i></label>
+                            <input class="input-email-pass" type="password" id="password" size="30">
+
+                            <p class="pad-small text_size-13 text_weight-400 text-color-red"><i
+                                    class="fas fa-star-of-life"></i>
+                                Required Fileds</p>
+                            <div class="right-button">
+                                <button
+                                    class="check-menu_button hover_color_gray text_size-14 text_weight-700 text_uppercase text-color-gray2"
+                                    type="submit">Log in</button>
+                                <a class="link" href="#">
+                                    <p class=" hover_color text_size-14 text_weight-400 text_color-black">Forgot
+                                        Password ?</p>
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </a>
-            <div class="cart__product-right text_color-gray">
-                <p class="margin_left hover_color">$150</p>
-                <input class="param_number text_color-gray hover_color" type="text" placeholder="2">
-                <p class="hover_color">FREE</p>
-                <p class="hover_color">$300</p>
-                <button class="button_bd" type="reset"><i
-                        class="fas fa-minus-circle fa-minus-circle-margin hover_color"></i></button>
-            </div>
-        </div>
-        <div class="cart__product text_size-13 bd_bottom">
-            <a class="link" href="single_page.html">
-                <div class="cart__product-left">
-                    <img class="hover_translate" src="img/cart_card3.png" alt="photo">
-                    <div class="parameters">
-                        <p class="text_color-black text_uppercase hover_color parameters_margin_bottom">Mango People
-                            T-shirt</p>
-                        <p class="text_color-gray">Color: Red</p>
-                        <p class="text_color-gray">Size: Xll</p>
+                </details>
+            </li>
+            <li class="check-menu__li">
+                <details>
+                    <summary
+                        class="check-summary hover_color text_color-black text_size-16 text_weight-700 text_uppercase">
+                        03.
+                        &nbsp;SHIPPING
+                        INFORMATION</summary>
+                    <div class="check-menu__item">
+                        <div class="check-menu__item-left">
+                            <p class="text_color-black text_size-13 text_weight-400 text_uppercase">
+                                Check as a guest or
+                                register</p>
+                            <p class="pad-small text-color-gray5 text_size-13 text_weight-400">Register with us
+                                for future
+                                convenience</p>
+                            <label
+                                class="pad-large check-menu__label text_color-black text_size-12 text_weight-400 text_uppercase"><input
+                                    class="check-menu-input" type="radio" name="reg">checkout as
+                                guest</label>
+                            <label
+                                class="pad-small check-menu__label text_color-black text_size-12 text_weight-400 text_uppercase"><input
+                                    class="check-menu-input" type="radio" name="reg" checked>register</label>
+                            <p class="pad-large text_color-black text_size-13 text_weight-400 text_uppercase">register
+                                and save time!</p>
+                            <p class="pad-small text-color-gray5 text_size-13 text_weight-400">Register with us for
+                                future convenience</p>
+                            <p class="pad-large text-color-gray5 text_size-13 text_weight-400"><img
+                                    class="check-menu-arr" src="img/double-arrow.png" alt="arr">Fast and easy checkout
+                            </p>
+                            <p class="pad-small text-color-gray5 text_size-13 text_weight-400"><img
+                                    class="check-menu-arr" src="img/double-arrow.png" alt="arr">Easy access to your
+                                order
+                                history and status</p>
+                            <button
+                                class="check-menu_button check-menu_button-mar-top hover_color_gray text_size-14 text_weight-700 text_uppercase text-color-gray2"
+                                type="submit">Continue</button>
+                        </div>
+                        <div class="check-menu__item-right">
+                            <p class="text_color-black text_size-13 text_weight-400 text_uppercase">
+                                Already registed?</p>
+                            <p class="pad-small pad-small text-color-gray5 text_size-13 text_weight-400">Please log in
+                                below</p>
+                            <label class="pad-large text_size-12 text_weight-400 text_uppercase" for="email">EMAIL
+                                ADDRESS <i class="fas fa-star-of-life"></i></label>
+                            <input class="input-email-pass" type="email" id="email" size="30">
+
+                            <label class="pad-small text_size-12 text_weight-400 text_uppercase"
+                                for="password">password<i class="fas fa-star-of-life"></i></label>
+                            <input class="input-email-pass" type="password" id="password" size="30">
+
+                            <p class="pad-small text_size-13 text_weight-400 text-color-red"><i
+                                    class="fas fa-star-of-life"></i>
+                                Required Fileds</p>
+                            <div class="right-button">
+                                <button
+                                    class="check-menu_button hover_color_gray text_size-14 text_weight-700 text_uppercase text-color-gray2"
+                                    type="submit">Log in</button>
+                                <a class="link" href="#">
+                                    <p class=" hover_color text_size-14 text_weight-400 text_color-black">Forgot
+                                        Password ?</p>
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </a>
-            <div class="cart__product-right text_color-gray">
-                <p class="margin_left hover_color">$150</p>
-                <input class="param_number hover_color text_color-gray" type="text" placeholder="2">
-                <p class="hover_color">FREE</p>
-                <p class="hover_color">$300</p>
-                <button class="button_bd" type="reset"><i
-                        class="fas fa-minus-circle fa-minus-circle-margin hover_color"></i></button>
-            </div>
-        </div>
+                </details>
+            </li>
+            <li class="check-menu__li">
+                <details>
+                    <summary
+                        class="check-summary hover_color text_color-black text_size-16 text_weight-700 text_uppercase">
+                        04.
+                        &nbsp;SHIPPING
+                        METHOD</summary>
+                    <div class="check-menu__item">
+                        <div class="check-menu__item-left">
+                            <p class="text_color-black text_size-13 text_weight-400 text_uppercase">
+                                Check as a guest or
+                                register</p>
+                            <p class="pad-small text-color-gray5 text_size-13 text_weight-400">Register with us
+                                for future
+                                convenience</p>
+                            <label
+                                class="pad-large check-menu__label text_color-black text_size-12 text_weight-400 text_uppercase"><input
+                                    class="check-menu-input" type="radio" name="reg">checkout as
+                                guest</label>
+                            <label
+                                class="pad-small check-menu__label text_color-black text_size-12 text_weight-400 text_uppercase"><input
+                                    class="check-menu-input" type="radio" name="reg" checked>register</label>
+                            <p class="pad-large text_color-black text_size-13 text_weight-400 text_uppercase">register
+                                and save time!</p>
+                            <p class="pad-small text-color-gray5 text_size-13 text_weight-400">Register with us for
+                                future convenience</p>
+                            <p class="pad-large text-color-gray5 text_size-13 text_weight-400"><img
+                                    class="check-menu-arr" src="img/double-arrow.png" alt="arr">Fast and easy checkout
+                            </p>
+                            <p class="pad-small text-color-gray5 text_size-13 text_weight-400"><img
+                                    class="check-menu-arr" src="img/double-arrow.png" alt="arr">Easy access to your
+                                order
+                                history and status</p>
+                            <button
+                                class="check-menu_button check-menu_button-mar-top hover_color_gray text_size-14 text_weight-700 text_uppercase text-color-gray2"
+                                type="submit">Continue</button>
+                        </div>
+                        <div class="check-menu__item-right">
+                            <p class="text_color-black text_size-13 text_weight-400 text_uppercase">
+                                Already registed?</p>
+                            <p class="pad-small pad-small text-color-gray5 text_size-13 text_weight-400">Please log in
+                                below</p>
+                            <label class="pad-large text_size-12 text_weight-400 text_uppercase" for="email">EMAIL
+                                ADDRESS <i class="fas fa-star-of-life"></i></label>
+                            <input class="input-email-pass" type="email" id="email" size="30">
+
+                            <label class="pad-small text_size-12 text_weight-400 text_uppercase"
+                                for="password">password<i class="fas fa-star-of-life"></i></label>
+                            <input class="input-email-pass" type="password" id="password" size="30">
+
+                            <p class="pad-small text_size-13 text_weight-400 text-color-red"><i
+                                    class="fas fa-star-of-life"></i>
+                                Required Fileds</p>
+                            <div class="right-button">
+                                <button
+                                    class="check-menu_button hover_color_gray text_size-14 text_weight-700 text_uppercase text-color-gray2"
+                                    type="submit">Log in</button>
+                                <a class="link" href="#">
+                                    <p class=" hover_color text_size-14 text_weight-400 text_color-black">Forgot
+                                        Password ?</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </details>
+            </li>
+            <li class="check-menu__li">
+                <details>
+                    <summary
+                        class="check-summary hover_color text_color-black text_size-16 text_weight-700 text_uppercase">
+                        05.
+                        &nbsp;PAYMENT
+                        METHOD</summary>
+                    <div class="check-menu__item">
+                        <div class="check-menu__item-left">
+                            <p class="text_color-black text_size-13 text_weight-400 text_uppercase">
+                                Check as a guest or
+                                register</p>
+                            <p class="pad-small text-color-gray5 text_size-13 text_weight-400">Register with us
+                                for future
+                                convenience</p>
+                            <label
+                                class="pad-large check-menu__label text_color-black text_size-12 text_weight-400 text_uppercase"><input
+                                    class="check-menu-input" type="radio" name="reg">checkout as
+                                guest</label>
+                            <label
+                                class="pad-small check-menu__label text_color-black text_size-12 text_weight-400 text_uppercase"><input
+                                    class="check-menu-input" type="radio" name="reg" checked>register</label>
+                            <p class="pad-large text_color-black text_size-13 text_weight-400 text_uppercase">register
+                                and save time!</p>
+                            <p class="pad-small text-color-gray5 text_size-13 text_weight-400">Register with us for
+                                future convenience</p>
+                            <p class="pad-large text-color-gray5 text_size-13 text_weight-400"><img
+                                    class="check-menu-arr" src="img/double-arrow.png" alt="arr">Fast and easy checkout
+                            </p>
+                            <p class="pad-small text-color-gray5 text_size-13 text_weight-400"><img
+                                    class="check-menu-arr" src="img/double-arrow.png" alt="arr">Easy access to your
+                                order
+                                history and status</p>
+                            <button
+                                class="check-menu_button check-menu_button-mar-top hover_color_gray text_size-14 text_weight-700 text_uppercase text-color-gray2"
+                                type="submit">Continue</button>
+                        </div>
+                        <div class="check-menu__item-right">
+                            <p class="text_color-black text_size-13 text_weight-400 text_uppercase">
+                                Already registed?</p>
+                            <p class="pad-small pad-small text-color-gray5 text_size-13 text_weight-400">Please log in
+                                below</p>
+                            <label class="pad-large text_size-12 text_weight-400 text_uppercase" for="email">EMAIL
+                                ADDRESS <i class="fas fa-star-of-life"></i></label>
+                            <input class="input-email-pass" type="email" id="email" size="30">
+
+                            <label class="pad-small text_size-12 text_weight-400 text_uppercase"
+                                for="password">password<i class="fas fa-star-of-life"></i></label>
+                            <input class="input-email-pass" type="password" id="password" size="30">
+
+                            <p class="pad-small text_size-13 text_weight-400 text-color-red"><i
+                                    class="fas fa-star-of-life"></i>
+                                Required Fileds</p>
+                            <div class="right-button">
+                                <button
+                                    class="check-menu_button hover_color_gray text_size-14 text_weight-700 text_uppercase text-color-gray2"
+                                    type="submit">Log in</button>
+                                <a class="link" href="#">
+                                    <p class="hover_color text_size-14 text_weight-400 text_color-black">Forgot
+                                        Password ?</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </details>
+            </li>
+            <li class="check-menu__li">
+                <details>
+                    <summary
+                        class="check-summary hover_color text_color-black text_size-16 text_weight-700 text_uppercase">
+                        06.
+                        &nbsp; ORDER
+                        REVIEW</summary>
+                    <div class="check-menu__item">
+                        <div class="check-menu__item-left">
+                            <p class="text_color-black text_size-13 text_weight-400 text_uppercase">
+                                Check as a guest or
+                                register</p>
+                            <p class="pad-small text-color-gray5 text_size-13 text_weight-400">Register with us
+                                for future
+                                convenience</p>
+                            <label
+                                class="pad-large check-menu__label text_color-black text_size-12 text_weight-400 text_uppercase"><input
+                                    class="check-menu-input" type="radio" name="reg">checkout as
+                                guest</label>
+                            <label
+                                class="pad-small check-menu__label text_color-black text_size-12 text_weight-400 text_uppercase"><input
+                                    class="check-menu-input" type="radio" name="reg" checked>register</label>
+                            <p class="pad-large text_color-black text_size-13 text_weight-400 text_uppercase">register
+                                and save time!</p>
+                            <p class="pad-small text-color-gray5 text_size-13 text_weight-400">Register with us for
+                                future convenience</p>
+                            <p class="pad-large text-color-gray5 text_size-13 text_weight-400"><img
+                                    class="check-menu-arr" src="img/double-arrow.png" alt="arr">Fast and easy checkout
+                            </p>
+                            <p class="pad-small text-color-gray5 text_size-13 text_weight-400"><img
+                                    class="check-menu-arr" src="img/double-arrow.png" alt="arr">Easy access to your
+                                order
+                                history and status</p>
+                            <button
+                                class="check-menu_button check-menu_button-mar-top hover_color_gray text_size-14 text_weight-700 text_uppercase text-color-gray2"
+                                type="submit">Continue</button>
+                        </div>
+                        <div class="check-menu__item-right">
+                            <p class="text_color-black text_size-13 text_weight-400 text_uppercase">
+                                Already registed?</p>
+                            <p class="pad-small pad-small text-color-gray5 text_size-13 text_weight-400">Please log in
+                                below</p>
+                            <label class="pad-large text_size-12 text_weight-400 text_uppercase" for="email">EMAIL
+                                ADDRESS <i class="fas fa-star-of-life"></i></label>
+                            <input class="input-email-pass" type="email" id="email" size="30">
+
+                            <label class="pad-small text_size-12 text_weight-400 text_uppercase"
+                                for="password">password<i class="fas fa-star-of-life"></i></label>
+                            <input class="input-email-pass" type="password" id="password" size="30">
+
+                            <p class="pad-small text_size-13 text_weight-400 text-color-red"><i
+                                    class="fas fa-star-of-life"></i>
+                                Required Fileds</p>
+                            <div class="right-button">
+                                <button
+                                    class="check-menu_button hover_color_gray text_size-14 text_weight-700 text_uppercase text-color-gray2"
+                                    type="submit">Log in</button>
+                                <a class="link" href="#">
+                                    <p class=" hover_color text_size-14 text_weight-400 text_color-black">Forgot
+                                        Password ?</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </details>
+            </li>
+        </ul>
     </div>
 
-    <div class="shopping-button container">
-        <button class="button_reset hover_color_gray" type="reset">
-            <div class="shopping-button__left text_uppercase text_size-14 text_weight-700 text-color-gray2">cLEAR
-                SHOPPING
-                CART</div>
-        </button>
 
-        <a class="link" href="index.html">
-            <div
-                class="shopping-button__right hover_color_gray text_uppercase text_size-14 text_weight-700 text-color-gray2">
-                cONTINUE
-                sHOPPING</div>
-        </a>
-    </div>
-
-    <div class="forms container">
-
-        <form class="forms__shipping" action="">
-            <div
-                class="forms__shipping-header text_uppercase text_size-16 text_weight-700 text_color-black margin_bottom">
-                Shipping
-                Adress</div>
-            <input class="margin_bottom forms__shipping_input text_color-sl-gray text_weight-300 text_size-13"
-                type="text" placeholder="Bangladesh">
-            <input class="margin_bottom forms__shipping_input text_color-sl-gray text_weight-300 text_size-13"
-                type="text" placeholder="State">
-            <input class="margin_bottom forms__shipping_input text_color-sl-gray text_weight-300 text_size-13"
-                type="text" placeholder="Postcode / Zip">
-            <button
-                class="margin_bottom forms__shipping_input button_size text-color-gray2 text_uppercase text_size-11 text_weight-700 hover_color_gray"
-                type="submit">get a quote</button>
-
-        </form>
-
-        <form class="forms__shipping" action="">
-            <div
-                class="forms__shipping-header text_uppercase text_size-16 text_weight-700 text_color-black margin_bottom">
-                coupon discount</div>
-            <p class="text_size-14 text_weight-300 text_color-dark-black margin_bottom">Enter your coupon code if you
-                have one</p>
-            <input
-                class="margin_bottom forms__shipping_input margin_bottom text_color-sl-gray text_weight-300 text_size-13"
-                type="text" placeholder="State">
-            <button
-                class="margin_bottom forms__shipping_input button_size text-color-gray2 text_uppercase text_size-11 text_weight-700 hover_color_gray"
-                type="submit">Apply coupon</button>
-
-        </form>
-
-        <div class="check">
-            <p class="text_size-11 text_weight-400 text-color-gray2 text_uppercase">Sub
-                total&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$900
-            </p>
-            <p class="text_color-black text_size-16 text_weight-700 text_uppercase margin-top">GRAND TOTAL
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="colortext">$900</span></p>
-            <hr class="hr_color">
-            <a class="link check__button" href="checkout.html">
-                <p class="text_size-16 text_weight-700 text_uppercase">proceed to checkout</p>
-            </a>
-        </div>
-    </div>
 
     <div class="connection">
         <div class="review_letter container">
