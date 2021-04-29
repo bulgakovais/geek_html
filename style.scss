@@ -21,11 +21,21 @@
 
 body {
     font-family: 'Lato', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
   }
+
+  .content{
+    display: grid;
+    grid-template-rows: 1fr auto;
+}
+.bottom{
+    margin-top: auto;
+}
 
 .container {
     width: 1140px; 
-    /* or max-width? */
     margin: 0 auto;
 }
 .top_service {
@@ -1194,7 +1204,6 @@ summary::-webkit-details-marker {
     background-color: #f7f7f7;
     display: flex;
     justify-content: center;
-    position: absolute;
     width: 100%;
     z-index: 1;
 }
@@ -1250,8 +1259,7 @@ summary::-webkit-details-marker {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 700px;
-    position: relative;
+    margin-top: -80px;
     background-color: white;
     border: 1px solid #eaeaea;
     padding-bottom: 120px;
