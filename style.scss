@@ -83,6 +83,13 @@ body {
     }
 }
 
+.top_logo:hover .logo_img{
+    transform: rotate(45deg);
+}
+.footer_logo:hover .logo_img{
+    transform: rotate(45deg);
+ }
+
 /* _____________________________________________________________________- */
 
 .top_service_left_search{
@@ -1572,7 +1579,10 @@ color: #b1b1b1;
 
 .fa-minus-circle{
     color: #c0c0c0;
+    transition: 0.3s;
 }
+
+
 .fa-minus-circle-margin{
     margin-bottom: 8px;
     margin-right: 20px;

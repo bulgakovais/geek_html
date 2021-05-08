@@ -101,6 +101,16 @@ body {
           transform: rotate(45deg);
 }
 
+.top_logo:hover .logo_img {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.footer_logo:hover .logo_img {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
 /* _____________________________________________________________________- */
 .top_service_left_search {
   display: -webkit-box;
@@ -1920,6 +1930,8 @@ details[open] .top_text::after {
 
 .fa-minus-circle {
   color: #c0c0c0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .fa-minus-circle-margin {
